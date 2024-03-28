@@ -25,10 +25,9 @@
 
 main {
   padding-top: 36px;
-  /* padding-left: 156px; */
-  /* padding-right: 156px; */
-  /* width: 1140px; */
-  width: 1128px;
+  padding-left: 156px;
+  padding-right: 156px;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -63,8 +62,6 @@ main {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  /* padding-left: 156px;
-  padding-right: 156px; */
   justify-content: center;
 }
 
