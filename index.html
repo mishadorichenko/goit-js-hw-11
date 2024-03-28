@@ -6,9 +6,24 @@
     <title>HW_11</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-c9db6b34.css">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-5b791d57.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-d96dbffa.css">
   </head>
   <body>
+    <main>
+      <form class="search-photo">
+        <input
+          class="search-input"
+          name="search"
+          placeholder="Search images..."
+          type="text"
+          autocomplete="off"
+        />
+        <button class="search-button" type="submit">Search</button>
+      </form>
+      <ul class="pictures-list"></ul>
+    </main>
     
   </body>
 </html>
