@@ -22,10 +22,10 @@ export function pictureMarkup(arr) {
         <img src="${arr.webformatURL}" alt="${arr.tags}" class="picture" />
         </a>
         <ul class="picture-data-list">
-          <li class="picture-data-item"><p class="picture-inf">Likes</p><p class = "picture-inf-number">${arr.likes}</p></li>
-          <li class="picture-data-item"><p class="picture-inf">Views</p><p class = "picture-inf-number">${arr.views}</p></li>
-          <li class="picture-data-item"><p class="picture-inf">Comments</p><p class = "picture-inf-number">${arr.comments}</p></li>
-          <li class="picture-data-item"><p class="picture-inf">Downloads</p><p class = "picture-inf-number">${arr.downloads}</p></li>
+          <li class="picture-data-item"><p class="picture-inf">Likes</p><p class = "picture-inf-data">${arr.likes}</p></li>
+          <li class="picture-data-item"><p class="picture-inf">Views</p><p class = "picture-inf-data">${arr.views}</p></li>
+          <li class="picture-data-item"><p class="picture-inf">Comments</p><p class = "picture-inf-data">${arr.comments}</p></li>
+          <li class="picture-data-item"><p class="picture-inf">Downloads</p><p class = "picture-inf-data">${arr.downloads}</p></li>
         </ul>
       </li>`
       )

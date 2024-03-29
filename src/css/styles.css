@@ -47,6 +47,15 @@ main {
   color: #2e2f42;
 }
 
+.search-input:hover {
+  border: 1px solid #000;
+}
+
+.search-input:active,
+.search-input:focus {
+  border: 1px solid #4e75ff;
+}
+
 .search-button {
   border: none;
   border-radius: 8px;
@@ -56,6 +65,10 @@ main {
   color: #fff;
   font-weight: 500;
   background: #4e75ff;
+}
+
+.search-button:hover {
+  background: #6c8cff;
 }
 
 .pictures-list {
@@ -81,6 +94,17 @@ main {
   display: flex;
   height: 48px;
   justify-content: space-around;
+}
+
+.picture-inf {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.picture-inf-data {
+  font-size: 12px;
+  line-height: 2;
 }
 
 /* ================lodader============= */
