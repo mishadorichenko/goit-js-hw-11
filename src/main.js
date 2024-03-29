@@ -20,11 +20,10 @@ form.addEventListener('submit', handleSubmitSearch);
 function handleSubmitSearch(event) {
   event.preventDefault();
   picturesList.innerHTML = '';
-  loader.style.display = 'inline-block';
 
   const query = form.search.value.toLowerCase().trim();
   if (query != '') {
-    // loader.style.display = 'inline-block';
+    loader.style.display = 'inline-block';
     getPictures(query)
       .then(photos => {
         const arrPhotos = photos.hits;
