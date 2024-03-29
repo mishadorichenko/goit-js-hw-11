@@ -8,6 +8,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector('.search-photo');
 const picturesList = document.querySelector('.pictures-list');
+const loader = document.querySelector('.loader');
 export const lightBox = new SimpleLightbox('.pictures-list a', {
   /* options */
   captionsData: 'alt',
@@ -19,17 +20,21 @@ form.addEventListener('submit', handleSubmitSearch);
 function handleSubmitSearch(event) {
   event.preventDefault();
   picturesList.innerHTML = '';
+  loader.style.display = 'inline-block';
 
   const query = form.search.value.toLowerCase().trim();
   if (query != '') {
+    // loader.style.display = 'inline-block';
     getPictures(query)
       .then(photos => {
         const arrPhotos = photos.hits;
         console.log(arrPhotos);
         picturesList.innerHTML = pictureMarkup(arrPhotos);
         lightBox.refresh();
+        loader.style.display = 'none';
       })
       .catch(error => console.log(error));
+    form.reset();
   } else {
     iziToast.error({
       message: 'Please enter valid query.',
